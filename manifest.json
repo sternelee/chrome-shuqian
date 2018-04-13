@@ -1,0 +1,29 @@
+{
+    "name": "代码书签",
+    "manifest_version": 2,
+    "version": "1.0.0",
+    "description": "收藏代码网站的书签",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "permissions":
+    [
+        "contextMenus",
+        "tabs",
+        "notifications",
+        "webRequest",
+        "webRequestBlocking",
+        "storage",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "background": {
+        "page": "background.html"
+    },
+    "browser_action":
+        {
+            "default_icon": "icon.png",
+            "default_title": "这是一个示例Chrome插件",
+            "default_popup": "popup.html"
+        }
+}

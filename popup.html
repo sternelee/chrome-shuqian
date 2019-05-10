@@ -17,10 +17,26 @@
             width: 75px;
             height: 75px;
         }
+        #app {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        .start {
+            border: 1px solid #000;
+            border-radius: 15px;
+            padding: 5px 15px;
+            cursor: pointer;
+        }
     </style>
-    <script src="popup.js"></script>
+    <script src="src/popup.js"></script>
 </head>
 <body>
+    <div id="app">
+        <button class="start">
+            Render App
+        </button>
+    </div>
     <h1>这是POPUP页面</h1>
 </body>
 </html>
